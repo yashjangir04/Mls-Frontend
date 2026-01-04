@@ -60,10 +60,10 @@ const Topbar = () => {
   }, [menuOpen]);
 
   return (
-    <header ref={headerRef} className="w-full bg-white fixed top-0 md:relative z-50 ">
+    <header ref={headerRef} className="w-[100vw] bg-white fixed top-0 md:relative z-50">
       
       {/* Top Info Bar */}
-      <div className="w-full mx-auto px-6 md:px-16 py-6 flex justify-between items-center h-24">
+      <div className="max-w-7xl mx-auto px-6 md:px-16 py-6 flex justify-between items-center h-24">
         
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -111,7 +111,7 @@ const Topbar = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-16">
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex h-16 items-center justify-between text-white roboto-regular w-full">
+          <div className="hidden lg:flex h-16 items-center justify-between text-white roboto-regular">
             <NavLink href="/">Home</NavLink>
             <NavLink href="/about">About us</NavLink>
             <NavLink href="/client">Our customers</NavLink>

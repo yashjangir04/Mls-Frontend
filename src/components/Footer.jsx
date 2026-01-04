@@ -6,7 +6,7 @@ import { FiClock } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="relative w-full bg-[#2C2B76] z-10 px-10 md:px-0">
+    <footer className="relative w-full bg-[#2C2B76] z-10 px-10 md:px-0 overflow-x-hidden">
       
       {/* Decorative Shapes */}
       <div className="absolute -top-10 -left-24 w-40 h-20 bg-[#28275c] -rotate-45" />
