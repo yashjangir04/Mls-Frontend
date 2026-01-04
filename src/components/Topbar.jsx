@@ -4,6 +4,7 @@ import { MdOutlinePhoneEnabled, MdOutlineEmail } from "react-icons/md";
 import { FiClock } from "react-icons/fi";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -164,14 +165,14 @@ const InfoBox = ({ icon, title, value }) => (
 
 /* Nav Link */
 const NavLink = ({ href, children, external }) => (
-  <a
-    href={href}
+  <Link
+    to={href}
     target={external ? "_blank" : "_self"}
     rel={external ? "noopener noreferrer" : undefined}
     className="hover:text-blue-300 transition duration-300 py-2"
   >
     {children}
-  </a>
+  </Link>
 );
 
 export default Topbar;

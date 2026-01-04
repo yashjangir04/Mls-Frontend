@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,28 +59,28 @@ const Topbar2 = () => {
   return (
     <div className="hidden md:block w-full">
       <div className="navbar2 fixed top-10 left-[13%] h-18 w-[75%] bg-white backdrop-blur-2xl flex flex-row justify-between items-center px-20 roboto-regular text-black z-1000 border border-gray-200">
-        <a href="/" className="hover:text-blue-300 duration-300">
+        <Link to="/" className="hover:text-blue-300 duration-300">
           Home
-        </a>
-        <a href="/about" className="hover:text-blue-300 duration-300">
+        </Link>
+        <Link to="/about" className="hover:text-blue-300 duration-300">
           About us
-        </a>
-        <a href="/client" className="hover:text-blue-300 duration-300">
+        </Link>
+        <Link to="/client" className="hover:text-blue-300 duration-300">
           Our customers
-        </a>
-        <a href="#" className="hover:text-blue-300 duration-300">
+        </Link>
+        <Link to="#" className="hover:text-blue-300 duration-300">
           Branches
-        </a>
-        <a href="/login" className="hover:text-blue-300 duration-300">
+        </Link>
+        <Link to="/login" className="hover:text-blue-300 duration-300">
           Profile
-        </a>
-        <a
+        </Link>
+        <Link
           target="_blank"
-          href="https://shipment-track-app.vercel.app/"
+          to="https://shipment-track-app.vercel.app/"
           className="hover:text-blue-300 duration-300"
         >
           Track
-        </a>
+        </Link>
       </div>
     </div>
   );
